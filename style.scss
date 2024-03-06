@@ -65,13 +65,6 @@ body {
         padding: 2.25rem;
 
         #attributes {
-          img {
-            height: 1.15rem;
-            width: 1.15rem;
-            position: relative;
-            top: 0.2rem;
-          }
-
           div:nth-of-type(1) {
             background-color: hsla(0, 100%, 67%, 0.075);
             margin-bottom: 1rem;
@@ -79,8 +72,13 @@ body {
 
             p:nth-of-type(1) {
               color: $colorLightRed;
+            }
+
+            p:nth-of-type(1):before {
+              content: url(images/icon-reaction.svg);
+              padding-right: 0.5rem;
               position: relative;
-              left: -2rem;
+              top: 0.2rem;
             }
 
             span:nth-of-type(2) {
@@ -95,8 +93,13 @@ body {
 
             p:nth-of-type(1) {
               color: $colorOrangeyYellow;
+            }
+
+            p:nth-of-type(1):before {
+              content: url(images/icon-memory.svg);
+              padding-right: 0.5rem;
               position: relative;
-              left: -2rem;
+              top: 0.2rem;
             }
 
             span:nth-of-type(2) {
@@ -111,8 +114,13 @@ body {
 
             p:nth-of-type(1) {
               color: $colorGreenTeal;
+            }
+
+            p:nth-of-type(1):before {
+              content: url(images/icon-verbal.svg);
+              padding-right: 0.5rem;
               position: relative;
-              left: -2.5rem;
+              top: 0.2rem;
             }
 
             span:nth-of-type(2) {
@@ -127,8 +135,13 @@ body {
 
             p:nth-of-type(1) {
               color: $colorCobaltBlue;
+            }
+
+            p:nth-of-type(1):before {
+              content: url(images/icon-visual.svg);
+              padding-right: 0.5rem;
               position: relative;
-              left: -2.5rem;
+              top: 0.2rem;
             }
 
             span:nth-of-type(2) {
@@ -152,10 +165,10 @@ body {
         }
       }
     }
-  }
 
-  footer a {
-    color: $colorBlue;
+    #footer a {
+      color: $colorBlue;
+    }
   }
 }
 
@@ -165,10 +178,7 @@ body {
       position: absolute;
       top: 0;
       section {
-        // background-color: black;
         flex-direction: column;
-        // justify-content: start;
-        // align-items: start;
         margin: 0 0 1rem 0;
 
         #left {
@@ -193,25 +203,12 @@ body {
         }
 
         #right {
-          #attributes {
-            img {
-              height: 1.25rem;
-              width: 1.25rem;
-              margin-right: -9rem;
-            }
-          }
-
           button {
             padding: 1rem;
             font-size: 1.2rem;
           }
         }
       }
-    }
-
-    footer {
-      position: relative;
-      top: 27rem;
     }
   }
 }

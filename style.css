@@ -35,12 +35,6 @@ body main section #right {
   color: hsl(224, 30%, 27%);
   padding: 2.25rem;
 }
-body main section #right #attributes img {
-  height: 1.15rem;
-  width: 1.15rem;
-  position: relative;
-  top: 0.2rem;
-}
 body main section #right #attributes div:nth-of-type(1) {
   background-color: hsla(0, 100%, 67%, 0.075);
   margin-bottom: 1rem;
@@ -48,8 +42,12 @@ body main section #right #attributes div:nth-of-type(1) {
 }
 body main section #right #attributes div:nth-of-type(1) p:nth-of-type(1) {
   color: hsl(0, 100%, 67%);
+}
+body main section #right #attributes div:nth-of-type(1) p:nth-of-type(1):before {
+  content: url(images/icon-reaction.svg);
+  padding-right: 0.5rem;
   position: relative;
-  left: -2rem;
+  top: 0.2rem;
 }
 body main section #right #attributes div:nth-of-type(1) span:nth-of-type(2) {
   color: gray;
@@ -61,8 +59,12 @@ body main section #right #attributes div:nth-of-type(2) {
 }
 body main section #right #attributes div:nth-of-type(2) p:nth-of-type(1) {
   color: hsl(39, 100%, 56%);
+}
+body main section #right #attributes div:nth-of-type(2) p:nth-of-type(1):before {
+  content: url(images/icon-memory.svg);
+  padding-right: 0.5rem;
   position: relative;
-  left: -2rem;
+  top: 0.2rem;
 }
 body main section #right #attributes div:nth-of-type(2) span:nth-of-type(2) {
   color: gray;
@@ -74,8 +76,12 @@ body main section #right #attributes div:nth-of-type(3) {
 }
 body main section #right #attributes div:nth-of-type(3) p:nth-of-type(1) {
   color: hsl(166, 100%, 37%);
+}
+body main section #right #attributes div:nth-of-type(3) p:nth-of-type(1):before {
+  content: url(images/icon-verbal.svg);
+  padding-right: 0.5rem;
   position: relative;
-  left: -2.5rem;
+  top: 0.2rem;
 }
 body main section #right #attributes div:nth-of-type(3) span:nth-of-type(2) {
   color: gray;
@@ -87,8 +93,12 @@ body main section #right #attributes div:nth-of-type(4) {
 }
 body main section #right #attributes div:nth-of-type(4) p:nth-of-type(1) {
   color: hsl(234, 85%, 45%);
+}
+body main section #right #attributes div:nth-of-type(4) p:nth-of-type(1):before {
+  content: url(images/icon-visual.svg);
+  padding-right: 0.5rem;
   position: relative;
-  left: -2.5rem;
+  top: 0.2rem;
 }
 body main section #right #attributes div:nth-of-type(4) span:nth-of-type(2) {
   color: gray;
@@ -102,7 +112,7 @@ body main section #right button:hover {
   cursor: pointer;
   background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
 }
-body footer a {
+body main #footer a {
   color: hsl(228, 45%, 44%);
 }
 
@@ -132,17 +142,8 @@ body footer a {
   body main section #left #circle p:nth-of-type(2) {
     top: 2rem;
   }
-  body main section #right #attributes img {
-    height: 1.25rem;
-    width: 1.25rem;
-    margin-right: -9rem;
-  }
   body main section #right button {
     padding: 1rem;
     font-size: 1.2rem;
-  }
-  body footer {
-    position: relative;
-    top: 27rem;
   }
 }/*# sourceMappingURL=style.css.map */
