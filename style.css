@@ -1,0 +1,148 @@
+body {
+  background-color: hsl(0, 0%, 100%);
+  font-family: "Hanken Grotesk", sans-serif;
+}
+body main section {
+  background-color: hsl(0, 0%, 100%);
+  max-width: 40rem;
+  margin: 1rem;
+}
+body main section #left {
+  min-width: 20rem;
+  background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  color: hsl(241, 100%, 89%);
+  padding: 2rem 3rem;
+}
+body main section #left p:nth-of-type(2) {
+  color: hsl(0, 0%, 100%);
+}
+body main section #left #circle {
+  background-image: linear-gradient(hsl(256, 72%, 46%), hsla(241, 72%, 46%, 0));
+  height: 11rem;
+  width: 11rem;
+}
+body main section #left #circle p:nth-of-type(1) {
+  top: 2.75rem;
+  color: hsl(0, 0%, 100%);
+}
+body main section #left #circle p:nth-of-type(2) {
+  top: 2.5rem;
+  color: hsl(241, 100%, 89%);
+}
+body main section #right {
+  min-width: 20rem;
+  background-color: white;
+  color: hsl(224, 30%, 27%);
+  padding: 2.25rem;
+}
+body main section #right #attributes img {
+  height: 1.15rem;
+  width: 1.15rem;
+  position: relative;
+  top: 0.2rem;
+}
+body main section #right #attributes div:nth-of-type(1) {
+  background-color: hsla(0, 100%, 67%, 0.075);
+  margin-bottom: 1rem;
+  padding: 0.75rem;
+}
+body main section #right #attributes div:nth-of-type(1) p:nth-of-type(1) {
+  color: hsl(0, 100%, 67%);
+  position: relative;
+  left: -2rem;
+}
+body main section #right #attributes div:nth-of-type(1) span:nth-of-type(2) {
+  color: gray;
+}
+body main section #right #attributes div:nth-of-type(2) {
+  background-color: hsla(39, 100%, 56%, 0.075);
+  margin-bottom: 1rem;
+  padding: 0.75rem;
+}
+body main section #right #attributes div:nth-of-type(2) p:nth-of-type(1) {
+  color: hsl(39, 100%, 56%);
+  position: relative;
+  left: -2rem;
+}
+body main section #right #attributes div:nth-of-type(2) span:nth-of-type(2) {
+  color: gray;
+}
+body main section #right #attributes div:nth-of-type(3) {
+  background-color: hsla(166, 100%, 37%, 0.075);
+  margin-bottom: 1rem;
+  padding: 0.75rem;
+}
+body main section #right #attributes div:nth-of-type(3) p:nth-of-type(1) {
+  color: hsl(166, 100%, 37%);
+  position: relative;
+  left: -2.5rem;
+}
+body main section #right #attributes div:nth-of-type(3) span:nth-of-type(2) {
+  color: gray;
+}
+body main section #right #attributes div:nth-of-type(4) {
+  background-color: hsla(234, 85%, 45%, 0.075);
+  margin-bottom: 2rem;
+  padding: 0.75rem;
+}
+body main section #right #attributes div:nth-of-type(4) p:nth-of-type(1) {
+  color: hsl(234, 85%, 45%);
+  position: relative;
+  left: -2.5rem;
+}
+body main section #right #attributes div:nth-of-type(4) span:nth-of-type(2) {
+  color: gray;
+}
+body main section #right button {
+  background-color: hsl(224, 30%, 27%);
+  color: hsl(0, 0%, 100%);
+  padding: 0.75rem;
+}
+body main section #right button:hover {
+  cursor: pointer;
+  background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+}
+body footer a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width: 30rem) {
+  body main {
+    position: absolute;
+    top: 0;
+  }
+  body main section {
+    flex-direction: column;
+    margin: 0 0 1rem 0;
+  }
+  body main section #left {
+    padding-left: 7rem;
+    padding-right: 7rem;
+    border-top-left-radius: 0 !important;
+    border-top-right-radius: 0 !important;
+  }
+  body main section #left #circle {
+    height: 10rem;
+    width: 10rem;
+  }
+  body main section #left #circle p:nth-of-type(1) {
+    top: 2rem;
+    font-size: 4em;
+  }
+  body main section #left #circle p:nth-of-type(2) {
+    top: 2rem;
+  }
+  body main section #right #attributes img {
+    height: 1.25rem;
+    width: 1.25rem;
+    margin-right: -9rem;
+  }
+  body main section #right button {
+    padding: 1rem;
+    font-size: 1.2rem;
+  }
+  body footer {
+    position: relative;
+    top: 27rem;
+  }
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,217 @@
+$colorLightRed: hsl(0, 100%, 67%);
+$colorOrangeyYellow: hsl(39, 100%, 56%);
+$colorGreenTeal: hsl(166, 100%, 37%);
+$colorCobaltBlue: hsl(234, 85%, 45%);
+
+$colorLightSlateBlue: hsl(252, 100%, 67%);
+$colorLightRoyalBlue: hsl(241, 81%, 54%);
+$colorVioletBlue: hsla(256, 72%, 46%, 1);
+$colorPersianBlue: hsla(241, 72%, 46%, 0);
+
+$colorWhite: hsl(0, 0%, 100%);
+$colorPaleBlue: hsl(221, 100%, 96%);
+$colorLavender: hsl(241, 100%, 89%);
+$colorDarkGrayBlue: hsl(224, 30%, 27%);
+
+$colorBlue: hsl(228, 45%, 44%);
+
+body {
+  background-color: $colorWhite;
+  font-family: "Hanken Grotesk", sans-serif;
+
+  main {
+    section {
+      background-color: $colorWhite;
+      max-width: 40rem;
+      margin: 1rem;
+
+      #left {
+        min-width: 20rem;
+        background-image: linear-gradient(
+          $colorLightSlateBlue,
+          $colorLightRoyalBlue
+        );
+        color: $colorLavender;
+        padding: 2rem 3rem;
+
+        p:nth-of-type(2) {
+          color: $colorWhite;
+        }
+
+        #circle {
+          background-image: linear-gradient(
+            $colorVioletBlue,
+            $colorPersianBlue
+          );
+          height: 11rem;
+          width: 11rem;
+
+          p:nth-of-type(1) {
+            top: 2.75rem;
+            color: $colorWhite;
+          }
+
+          p:nth-of-type(2) {
+            top: 2.5rem;
+            color: $colorLavender;
+          }
+        }
+      }
+
+      #right {
+        min-width: 20rem;
+        background-color: white;
+        color: $colorDarkGrayBlue;
+        padding: 2.25rem;
+
+        #attributes {
+          img {
+            height: 1.15rem;
+            width: 1.15rem;
+            position: relative;
+            top: 0.2rem;
+          }
+
+          div:nth-of-type(1) {
+            background-color: hsla(0, 100%, 67%, 0.075);
+            margin-bottom: 1rem;
+            padding: 0.75rem;
+
+            p:nth-of-type(1) {
+              color: $colorLightRed;
+              position: relative;
+              left: -2rem;
+            }
+
+            span:nth-of-type(2) {
+              color: gray;
+            }
+          }
+
+          div:nth-of-type(2) {
+            background-color: hsla(39, 100%, 56%, 0.075);
+            margin-bottom: 1rem;
+            padding: 0.75rem;
+
+            p:nth-of-type(1) {
+              color: $colorOrangeyYellow;
+              position: relative;
+              left: -2rem;
+            }
+
+            span:nth-of-type(2) {
+              color: gray;
+            }
+          }
+
+          div:nth-of-type(3) {
+            background-color: hsla(166, 100%, 37%, 0.075);
+            margin-bottom: 1rem;
+            padding: 0.75rem;
+
+            p:nth-of-type(1) {
+              color: $colorGreenTeal;
+              position: relative;
+              left: -2.5rem;
+            }
+
+            span:nth-of-type(2) {
+              color: gray;
+            }
+          }
+
+          div:nth-of-type(4) {
+            background-color: hsla(234, 85%, 45%, 0.075);
+            margin-bottom: 2rem;
+            padding: 0.75rem;
+
+            p:nth-of-type(1) {
+              color: $colorCobaltBlue;
+              position: relative;
+              left: -2.5rem;
+            }
+
+            span:nth-of-type(2) {
+              color: gray;
+            }
+          }
+        }
+
+        button {
+          background-color: $colorDarkGrayBlue;
+          color: $colorWhite;
+          padding: 0.75rem;
+        }
+
+        button:hover {
+          cursor: pointer;
+          background-image: linear-gradient(
+            $colorLightSlateBlue,
+            $colorLightRoyalBlue
+          );
+        }
+      }
+    }
+  }
+
+  footer a {
+    color: $colorBlue;
+  }
+}
+
+@media screen and (max-width: 30rem) {
+  body {
+    main {
+      position: absolute;
+      top: 0;
+      section {
+        // background-color: black;
+        flex-direction: column;
+        // justify-content: start;
+        // align-items: start;
+        margin: 0 0 1rem 0;
+
+        #left {
+          padding-left: 7rem;
+          padding-right: 7rem;
+          border-top-left-radius: 0 !important;
+          border-top-right-radius: 0 !important;
+
+          #circle {
+            height: 10rem;
+            width: 10rem;
+
+            p:nth-of-type(1) {
+              top: 2rem;
+              font-size: 4em;
+            }
+
+            p:nth-of-type(2) {
+              top: 2rem;
+            }
+          }
+        }
+
+        #right {
+          #attributes {
+            img {
+              height: 1.25rem;
+              width: 1.25rem;
+              margin-right: -9rem;
+            }
+          }
+
+          button {
+            padding: 1rem;
+            font-size: 1.2rem;
+          }
+        }
+      }
+    }
+
+    footer {
+      position: relative;
+      top: 27rem;
+    }
+  }
+}
